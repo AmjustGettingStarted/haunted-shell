@@ -84,3 +84,4 @@ def test_runner_command_execution(tmp_path: Path):
     # Verify logged to graveyard
     assert len(gy.get_entries()) == 1
     assert gy.get_entries()[0].exit_code == 42
+

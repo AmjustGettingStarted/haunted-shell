@@ -21,3 +21,4 @@ def test_banner_art():
 def test_stream_ghost_speech():
     result = stream_ghost_speech("Whispers from the phosphor.", typing_delay=0.0001)
     assert result == "Whispers from the phosphor."
+

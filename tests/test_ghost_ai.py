@@ -74,3 +74,4 @@ def test_ghost_ai_passive_haunt():
     # Frequency 1.0 -> True
     ghost_loud = GhostAI(haunt_frequency=1.0, offline_only=True)
     assert ghost_loud.should_passive_haunt("ls") is True
+

@@ -41,3 +41,4 @@ def test_graveyard_render(tmp_path: Path):
 
     # Check rendering does not crash
     gy.render(console, limit=4)
+
