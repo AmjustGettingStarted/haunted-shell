@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "haunted-sh"
+version = "0.1.0"
+description = "An interactive haunted terminal CLI wrapper possessed by an ancient digital spirit"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Spectral Systems" }
+]
+keywords = [
+    "cli",
+    "terminal",
+    "shell",
+    "ai",
+    "local-ai",
+    "ollama",
+    "open-weight",
+    "rich",
+    "hackathon",
+    "spooky",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Shells",
+    "Topic :: Terminals",
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "prompt-toolkit>=3.0.36",
+    "httpx>=0.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+haunted-sh = "haunted_sh.cli:app"
+necroshell = "haunted_sh.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["haunted_sh*"]
